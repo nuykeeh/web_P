@@ -62,39 +62,104 @@ h1 {
   letter-spacing: -2.25px;
   padding-left: 180px;
   padding-top: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 2줄까지 표시 */
+  -webkit-box-orient: vertical;
 }
 /*----------------------------------------*/
+/* 하단 프로젝트 그룹 */
+#projects{
+  padding-top: 120px;
+}
+/* 프로젝트 헤더 */
 .pro-container{
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  padding-top: 120px;
 }
 .projects-header {
   display: flex;
+  align-items: end;
   width: 1540px;
   justify-content: space-between;
-  align-items: center;
-  padding: 180px;
+  padding: 0 190px;
+  gap: min(64px, 80vw);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.content1 {
+color: #000;
+font-family: Pre;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 42px; /* 131.25% */
+}
+.content2{
+color: var(--Font-02_black, #111);
+font-family: Pre;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: -0.4px;
+overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* 1줄까지 표시 */
+  -webkit-box-orient: vertical;
+}
+/*----------------------------------------*/
+/* 프로젝트 리스트 */
+.project-item{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+  border-top: 1px solid black;
+  align-items: center;
+  padding: 0 8px;
+  gap: min(64px, 80vw);
+}
+.project-item:last-child {
+  border-bottom: 1px solid #000;
+}
+.info{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.index{
+  width: 38px;
+}
+.title{
+color: #000;
+font-family: Pretendard;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 34px; /* 170% */
+letter-spacing: -0.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* 1줄까지 표시 */
+  -webkit-box-orient: vertical;
+}
+.projects-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  width: 100%;
+}
 .project-list{
+  width: 1540px;
   list-style: none;
-  padding: 0;
+  padding: 0 190px;
   margin: 0;
+}
+/*----------------------------------------*/
+.main-content{
+  padding-bottom: 140px;
 }
