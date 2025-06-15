@@ -62,6 +62,7 @@ h1 {
   letter-spacing: -2.25px;
   padding-left: 180px;
   padding-top: 80px;
+
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -162,4 +163,77 @@ letter-spacing: -0.5px;
 /*----------------------------------------*/
 .main-content{
   padding-bottom: 140px;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------- 호버 ---------------------*/
+
+/* 프로젝트 타이틀 호버 */
+.title:hover {
+  background-color: #1c1c1c; 
+  color: #f5f5f5; 
+  padding: 0 6px;
+}
+
+/*----------------------------------------*/
+/* gnb <a> 호버 */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  opacity: 0;               /* 초기엔 투명하게 */
+  transition: opacity 0.3s ease;
+}
+nav a:hover::after {
+  opacity: 1;               /* 호버 시 서서히 나타남 */
+}
+nav a {
+  position: relative; /* 반드시 있어야 함 */
+  text-decoration: none;
+}
+/*----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 인터랙션 */
+
+/* .typed-cursor {
+  font-weight: 100;   
+  font-size: inherit;
+  color: #000;        
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+} */
+
+/*----------------------------------------*/
+/* 미디어쿼리 */
+@media screen and (max-width: 1440px) {
+  h1{font-size: 60px;}
 }
