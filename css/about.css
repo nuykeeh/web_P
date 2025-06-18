@@ -1,0 +1,80 @@
+/* 상단 위치 바 */
+.about{
+  width: 100%;
+  height: 84px;
+  border-bottom: 1px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-container{
+  display: flex;
+  width: 1560px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 180px;
+  gap: min(64px, 80vw);
+
+color: var(--Font-02_black, #111);
+font-family: Pre;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 38px; /* 135.714% */
+letter-spacing: -0.7px;
+}
+/*----------------------------------------*/
+/* 소개 말 */
+.introduction{
+  display: flex;
+  width: 897px;
+  min-width: 688px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 80px;
+  padding-left: 180px;
+  gap: 18px;
+}
+.text-header{
+color: #000;
+font-family: Pre;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+}
+.text-con{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.text{
+color: #000;
+font-family: Pre;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: -0.45px;
+}
+/*----------------------------------------*/
+/* 연락처 */
+.phone-number{
+  display: flex;
+  width: 897px;
+  min-width: 688px;
+  flex-direction: column;
+  align-items: flex-start;
+    padding-top: 80px;
+  padding-left: 180px;
+  gap: 18px;
+}
+.text-con2{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+u{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

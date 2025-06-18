@@ -1,0 +1,31 @@
+/* 상단 위치 바 */
+.projects{
+width: 100%;
+height: 84px;
+border-bottom: 1px solid #111;
+display: flex;
+justify-content: center;
+}
+.projects-container{
+  display: flex;
+  width: 1560px;
+  max-width: 1560px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 180px;
+  gap: 330px;
+} 
+h2{
+color: var(--Font-02_black, #111);
+font-family: Pre;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 38px; /* 135.714% */
+letter-spacing: -0.7px;
+}
+.Projects-5{
+width: 14.219px;
+height: 20.07px;
+flex-shrink: 0;
+}
