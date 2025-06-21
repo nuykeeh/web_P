@@ -31,7 +31,7 @@ letter-spacing: -0.7px;
   min-width: 688px;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-left: 180px;
   gap: 18px;
 }
@@ -54,7 +54,7 @@ font-family: Pre;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 150%;
+line-height: 170%;
 letter-spacing: -0.45px;
 }
 /*----------------------------------------*/
@@ -65,7 +65,7 @@ letter-spacing: -0.45px;
   min-width: 688px;
   flex-direction: column;
   align-items: flex-start;
-    padding-top: 80px;
+  padding-top: 120px;
   padding-left: 180px;
   gap: 18px;
 }
@@ -77,4 +77,97 @@ letter-spacing: -0.45px;
 u{
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+/*----------------------------------------*/
+/* 경력 */
+.experience{
+display: flex;
+flex-direction: column;
+gap: 80px;
+padding-left: 180px;
+padding-top: 120px;
+}
+.text-header span{
+  color: #999;
+font-family: Pretendard;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 27px */
+margin-left: 8px;
+}
+.experience-card{
+  padding-top: 36px;
+  display: flex;
+  gap: 24px;
+}
+.company-logo{
+  width: 42px;
+}
+.text-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.company-name{
+  color: #000;
+font-family: Pre;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 27px */
+}
+.experience-info span {
+  margin-right: 8px;
+  color: #555;
+  font-family: Pre;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+.main-text{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-top: 18px;
+  padding-left: 66px;
+}
+.main-text-1{
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+.text-header2{
+  color: #111;
+font-family: Pre;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 27px */
+letter-spacing: -0.45px;
+}
+.text-description{
+  color: #696969;
+font-family: Pre;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%; /* 27px */
+letter-spacing: -0.45px;
+}
+/*----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+body{
+  padding-bottom: 80px;
 }
