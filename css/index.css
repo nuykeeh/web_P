@@ -2,7 +2,11 @@
   font-family: pre;
   src: url(/font/PretendardVariable.ttf);
 }
-
+/* 드래그 했을때 색상 지정 */
+::selection {
+  background: #111; /* 선택 배경색 */
+  color: #f5f5f5;       /* 선택된 텍스트 색상 */
+}
 body{
   font-family: pre;
   padding: 0;

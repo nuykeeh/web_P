@@ -28,7 +28,7 @@ letter-spacing: -0.7px;
 .introduction{
   display: flex;
   width: 897px;
-  min-width: 688px;
+  min-width: 688px; 
   flex-direction: column;
   align-items: flex-start;
   padding-top: 60px;
