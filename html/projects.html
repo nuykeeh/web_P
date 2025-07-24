@@ -20,18 +20,90 @@
         </nav>
       </div>
     </div>
-
     <div class="projects">
       <div class="projects-container">
         <h2>projects</h2>
-        <div class="Projects-5"><img src="/svg/Projects_5.svg" alt="5"></div>
+        <!-- <div class="Projects-5"><img src="/svg/Projects_5.svg" alt="5"></div> -->
+        <div class="Projects-5" id="project-count"></div>
       </div>
     </div>
-
   </header>
-
   <main>
     <!-- 여기에 각 페이지의 고유 콘텐츠를 넣으면 됨 -->
+      <section class="project-section">
+        <div class="project-grid">
+          <!-- 프로젝트 1 -->
+          <a class="project-card" href="/html/project1.html">
+            <img src="/imges/썸네일.png" alt="프로젝트1 썸네일" class="project-thumb">
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">01</span>
+                <span class="project-title">고립은둔청년의 일상회복을 위한 서비스 - 리부트 오피스</span>
+              </div>
+              <div class="project-tags">
+                <img src="/svg/uiux.svg" alt="UXUI 태그" class="project-tag">
+              </div>
+            </div>
+          </a>
+          <!-- 프로젝트 2 -->
+          <a class="project-card" href="/html/project2.html">
+            <img src="/imges/썸네일.png" alt="프로젝트2 썸네일" class="project-thumb">
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">02</span>
+                <span class="project-title">ChatGPT 리디자인 프로젝트</span>
+              </div>
+              <div class="project-tags">
+                <img src="/svg/uiux.svg" alt="UXUI 태그" class="project-tag">
+              </div>
+            </div>
+          </a>
+          <!-- 프로젝트 3 -->
+          <a class="project-card" href="/html/project3.html">
+            <img src="/imges/썸네일.png" alt="프로젝트3 썸네일" class="project-thumb">
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">03</span>
+                <span class="project-title">2024 디지털디자인과 과제전 포스터</span>
+              </div>
+              <div class="project-tags">
+                <img src="/svg/graphic.svg" alt="graphic 태그" class="project-tag">
+              </div>
+            </div>
+          </a>
+          <!-- 프로젝트 4 -->
+          <a class="project-card" href="/html/project4.html">
+            <img src="/imges/썸네일.png" alt="프로젝트4 썸네일" class="project-thumb">
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">04</span>
+                <span class="project-title">올리브영 모바일 앱 리디자인 프로젝트</span>
+              </div>
+              <div class="project-tags">
+                <img src="/svg/uiux.svg" alt="UXUI 태그" class="project-tag">
+              </div>
+            </div>
+          </a>
+          <!-- 프로젝트 5 (마지막 줄 1개) -->
+          <a class="project-card" href="/html/project5.html">
+            <img src="/imges/썸네일.png" alt="프로젝트5 썸네일" class="project-thumb">
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">05</span>
+                <span class="project-title">MUSINSA 리디자인 및 퍼블리싱 프로젝트</span>
+              </div>
+              <div class="project-tags">
+                <img src="/svg/Dev.svg" alt="Dev 태그" class="project-tag">
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
   </main>
+  <script>
+    // 프로젝트 카드 개수 세서 헤더에 표시
+    const count = document.querySelectorAll('.project-card').length;
+    document.getElementById('project-count').textContent = count;
+  </script>
 </body>
 </html>

@@ -15,6 +15,8 @@ justify-content: center;
   padding: 0 180px;
   gap: 330px;
 } 
+/*----------------------------------------*/
+/* 프로젝트 헤더 */
 h2{
 color: var(--Font-02_black, #111);
 font-family: Pre;
@@ -25,7 +27,59 @@ line-height: 38px; /* 135.714% */
 letter-spacing: -0.7px;
 }
 .Projects-5{
-width: 14.219px;
-height: 20.07px;
-flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Pre;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px; /* 135.714% */
+  letter-spacing: -0.7px;
+}
+/*----------------------------------------*/
+/* 메인 컨텐츠 */
+main{
+  padding-bottom: 80px;
+}
+.project-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2열로 배치 */
+  gap: 40px 16px;
+  max-width: 1560px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 0 180px;
+}
+.project-thumb{
+  width: 100%;
+}
+.project-info{
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-meta{
+  font-family: pre;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 144.444% */
+  letter-spacing: -0.45px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/*----------------------------------------*/
+/* 미디어쿼리: 1440px 이하 */
+@media (max-width: 1440px) {
+  .project-grid{
+    max-width: 1080px;
+  }
+  .project-meta{
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

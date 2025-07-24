@@ -165,8 +165,11 @@ letter-spacing: -0.5px;
   margin: 0;
 }
 /*----------------------------------------*/
+/* 메인 컨텐츠 전체 박스 */
 .main-content{
   padding-bottom: 80px;
+  max-width: 1920px;
+  margin: 0 auto; /* 가운데 정렬 */
 }
 
 
