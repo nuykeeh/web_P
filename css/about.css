@@ -1,11 +1,16 @@
-/* 상단 위치 바 */
+/* 상단 위치 바 - 고정 위치 */
 .about{
+  position: fixed;
+  top: 84px; /* GNB 높이만큼 아래에 위치 */
+  left: 0;
   width: 100%;
   height: 84px;
   border-bottom: 1px solid #111;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
+  z-index: 999;
 }
 .about-container{
   display: flex;
@@ -31,7 +36,7 @@ letter-spacing: -0.7px;
   min-width: 688px;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 60px;
+  padding-top: 228px; /* GNB(84px) + About 바(84px) + 기존 여백(60px) */
   padding-left: 180px;
   gap: 18px;
 }
